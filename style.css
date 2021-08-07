@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    NAVBAR
+*/
+
+#navbar {
+    position: fixed;
+    overflow-y: scroll;
+    width: 25%;
+    height: 100%;
+}
+
+#navbar h1 {
+    background-color: black;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    border-bottom: 3px solid black;
+    color: white;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 0.7rem 0.3rem;
+    border-bottom: 1px solid black;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+#navbar ul li:hover {
+    background-color: #ededed;
+}
+
+#main-doc {
+    position: absolute;
+    top: 0;
+    left: 26%;
+}
+
+.main-section {
+    padding: 3rem 0;
+}
+
+.main-section header {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+#berita_lainnya ul {
+    padding-left: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: 250px;
+    }
+
+    #navbar ul li a {
+        font-size: 1rem;
+    }
+
+    #main-doc {
+        left: 0;
+        top: 260px;
+        padding: 0 1rem;
+    }
+}
